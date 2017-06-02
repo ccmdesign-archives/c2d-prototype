@@ -1,0 +1,41 @@
+.layout {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+
+  &__centered {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+  
+  &__main {
+    flex: 3;
+    padding-right: 40px;
+    min-width: 760px;
+  }
+
+  &__column {
+    flex: 1;
+    min-width: 240px;
+  }
+
+  &__floating-section {
+    position: relative;
+    padding: 21px 0;
+    margin: 20px 0 -75px;
+  }
+
+  &--header {
+    padding-top: 8%;
+    align-items: flex-end;
+  }
+
+  &--flex {
+    display: flex;  
+  }
+}
+

@@ -1,0 +1,242 @@
+---
+layout: default
+title: C2D Open Data Portal - Prototype
+---
+
+<div class="top-bar">
+  <div class="top-bar__button">
+    <i class="material-icons">menu</i>
+  </div>
+  <a class="top-bar__title">
+    <h1><span>C2D</span> | Centre of Direct Democracy</h1>
+  </a>
+
+  <div class="top-bar__button">
+    <i class="material-icons">more_vert</i>
+  </div>
+</div>
+
+<main role="main"> <!-- main content starts here -->
+
+<!--  -->
+<header class="layout__container layout--header main-header" style="background-image: url('/images/dino-reichmuth-90169.jpg');">
+  <div class="layout__centered layout--flex">
+    <div class="layout__main">
+      <hgroup>
+        <div><span class="highlighted-text highlighted-text--yellow">National</span></div>
+        <div><span class="highlighted-text highlighted-text--green">Initiative (Formulated Draft)</span></div>
+        <div>
+          <h1 class="main-header__title highlighted-text highlighted-text--orange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur laborum earum non aspernatur libero. Corrupti impedit veniam harum </h1>  
+        </div>
+        <div><span class="highlighted-text highlighted-text--linked">Linked Vote</span></div>
+      </hgroup>
+      
+      <div class="layout__floating-section charts">
+        <div class="chart chart--result"></div>
+        <div class="chart"></div>
+        <div class="chart"></div>
+        <div class="chart"></div>
+      </div>
+    </div>
+        
+    <aside class="layout__column sidebar sidebar--header">
+      <div class="sidebar__content country-name">
+        <img src="/images/flags/ch.svg" alt="">
+        <h3>Switzerland</h3>
+      </div>
+      <div class="sidebar__content">
+        <div class="category-tag category-tag--1">Environment</div>  
+        <div class="category-tag category-tag--2">Green Energy</div>  
+        <div class="category-tag category-tag--3">Efficient Resources</div>  
+      </div>
+    </aside>
+  </div>
+</header>
+
+<div class="layout__container layout--body">
+  <div class="layout__centered layout--flex">
+    <div class="layout__main">&nbsp;</div>
+    <aside class="layout__column sidebar sidebar--body">
+      <div><a href="#" target="_blank" title="File Name" class="button button--orange">API Endpoint</a></div>
+    </aside>
+  </div>
+</div>
+
+<div class="layout__container layout--body">
+  <div class="layout__centered layout--flex">
+    <div class="layout__main">
+      <h3>Description</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quos nam, ipsa, error laborum architecto magni dolorem qui aspernatur in, reiciendis ab quod sint ea dolor esse. Possimus, nisi, aliquam!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quos nam, ipsa, error laborum architecto magni dolorem qui aspernatur in, reiciendis ab quod sint ea dolor esse. Possimus, nisi, aliquam!</p>
+    </div>
+    <aside class="layout__column sidebar">
+      <h3>Files</h3>
+      <div><a href="#" target="_blank" title="File Name" class="button button--green">File Name</a></div>
+      <div><a href="#" target="_blank" title="File Name" class="button button--green">File Name</a></div>
+      <div><a href="#" target="_blank" title="File Name" class="button button--green">File Name</a></div>
+      <div><a href="#" target="_blank" title="File Name" class="button button--green">File Name</a></div>
+    </aside>
+  </div>
+</div>
+
+<section class="expand-section js-target">
+  <div class="layout__container"> <!--expand-section--active-->
+    <div class="layout__centered">
+      <div class="expand-section__button expand-section--green js-click">Show Structured Data</div>
+    </div>
+  </div>
+  <div class="layout__container expand-section__panel expand-section--green"> <!--expand-section--active-->
+    <div class="layout__centered">
+      <div class="expand-section__content">
+        <i class="expand-section__close material-icons js-click">close</i>
+        <table>
+          <tr>
+            <td>Title</td>
+            <td>Law on disaster relief and civil defence of 18.1.83</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Gesetz über Katastrophenhilfe und zivile Verteidigung vom 18.1.83</td>
+          </tr>
+          <tr>
+            <td>Referendum Number</td>
+            <td>71</td>
+          </tr>
+          <tr>
+            <td>Level</td>
+            <td>National</td>
+          </tr>
+          <tr>
+            <td>Country</td>
+            <td>Switzerland</td>
+          </tr>
+          <tr>
+            <td>Date</td>
+            <td>June 6, 1983</td>
+          </tr>
+          <tr>
+            <td>Result</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>No Votes</td>
+            <td>15599 (36%)</td>
+          </tr>
+          <tr>
+            <td>Yes Votes</td>
+            <td>27596 (63%)</td>
+          </tr>
+          <tr>
+            <td>Turnover</td>
+            <td>15%</td>
+          </tr>
+          <tr>
+            <td>Total Electorate</td>
+            <td>285391</td>
+          </tr>
+          <tr>
+            <td>Total Voters</td>
+            <td>44981</td>
+          </tr>
+          <tr>
+            <td>Citizens Abroad</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Empty Ballots</td>
+            <td>1773</td>
+          </tr>
+          <tr>
+            <td>Valid Ballots</td>
+            <td>43195</td>
+          </tr>
+          <tr>
+            <td>Invalid Ballots</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>Informal Ballots</td>
+            <td>-1</td>
+          </tr>
+          
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="expand-section js-target">
+  <div class="layout__container"> <!--expand-section--active-->
+    <div class="layout__centered">
+      <div class="expand-section__button expand-section--orange js-click">Show JSON Object</div>
+    </div>
+  </div>
+  <div class="layout__container expand-section__panel expand-section--orange"> <!--expand-section--active-->
+    <div class="layout__centered">
+      <div class="expand-section__content">
+        <i class="expand-section__close material-icons js-click">close</i>
+        <code>
+          <pre>
+            {
+              "_id": {
+                  "$oid": "59304a25f43e400309ff6673"
+              },
+              "title": {
+                  "en": "Law on disaster relief and civil defence of 18.1.83",
+                  "de": "Gesetz über Katastrophenhilfe und zivile Verteidigung vom 18.1.83",
+                  "fr": ""
+              },
+              "referendum_number": "71",
+              "level": 2,
+              "country": "Switzerland",
+              "date": "1983-06-26",
+              "result": "yes",
+              "no_votes": 15599,
+              "yes_votes": 27596,
+              "no_pct": 36.112976038893,
+              "yes_pct": 63.887023961107,
+              "turnover_pct": 15.761183779446,
+              "total_electorate": 285391,
+              "total_voters": 44981,
+              "citizens_abroad": 0,
+              "empty_ballots": 1773,
+              "valid_ballots": 43195,
+              "invalid_ballots": 13,
+              "informal_ballots": -1,
+              "tags": [
+                  "Environment and living space",
+                  "Civil protection",
+                  "Security policy"
+              ]
+          }
+          </pre>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="layout__centered layout--flex">
+    <div class="layout__column footer__column">
+      <h4>Lorem ipsum dolor</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptatem, aliquam distinctio. Repellendus consectetur pariatur, minus molestias fuga sed autem? Ipsa quasi maiores quis. Possimus vero inventore rerum perferendis doloribus.</p>  
+    </div>
+    <div class="layout__column footer__column">
+      <h4>Lorem ipsum dolor</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptatem, aliquam distinctio. Repellendus consectetur pariatur, minus molestias fuga sed autem? Ipsa quasi maiores quis. Possimus vero inventore rerum perferendis doloribus.</p>  
+    </div>
+    <div class="layout__column footer__column">
+      <h4>Lorem ipsum dolor</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptatem, aliquam distinctio. Repellendus consectetur pariatur, minus molestias fuga sed autem? Ipsa quasi maiores quis. Possimus vero inventore rerum perferendis doloribus.</p>  
+    </div>
+    <div class="layout__column footer__column">
+      <h4>Lorem ipsum dolor</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptatem, aliquam distinctio. Repellendus consectetur pariatur, minus molestias fuga sed autem? Ipsa quasi maiores quis. Possimus vero inventore rerum perferendis doloribus.</p>  
+    </div>
+    
+
+    
+  </div>
+  
+</footer>

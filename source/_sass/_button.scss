@@ -1,0 +1,44 @@
+.button {
+  padding: 3px;
+  display: block;
+  border: 1px solid currentColor;
+  color: currentColor;  
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all .3s ease;
+
+  &:hover {
+    color: white;
+    box-shadow: 0 0 4px rgba(black, .2);
+  }
+
+  &--orange {
+    border-color: $orange;
+    color: $orange;
+
+    &:hover { background-color: $orange; }
+  }
+
+  &--green {
+    border-color: $green;
+    color: $green;
+
+    &:hover { background-color: $green; }
+  }
+
+
+}
+
+.category-tag {
+  font-weight: 400;
+  margin: 10px 20px;
+  text-align: center;
+  color: white;
+  padding: 4px;
+
+  &--1 { background-color: $green; }
+  &--2 { background-color: rgba($green, .7);}
+  &--3 { background-color: rgba($green, .4);}
+}

@@ -1,0 +1,11 @@
+.footer {
+  background-color: rgba(black, .03);
+  padding-top: 30px;
+  margin-top: 30px; // Temp Shit
+
+  &__column {
+    
+  }
+
+  .footer__column:not(:last-of-type) { padding-right: 30px; }
+}
