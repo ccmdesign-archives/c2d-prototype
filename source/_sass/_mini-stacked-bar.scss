@@ -1,0 +1,18 @@
+.mini-stacked-bar {
+  overflow: hidden;
+  min-width: 100px;
+
+
+  &__value {
+    height: 14px;
+    float: left;
+  }
+
+  &--yes {
+    background-color: $yes-color;
+  }
+
+  &--no {
+    background-color: $no-color;
+  }
+}

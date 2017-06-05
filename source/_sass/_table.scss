@@ -1,18 +1,45 @@
 table {
   width: 100%;
+  border-collapse: collapse;
+
+  th {
+    text-align: left;
+    padding: 4px 12px;
+    color: rgba(black, .7);
+    font-weight: 600;
+  }
 
   td {
     padding: 4px 12px;
     border-bottom: 1px solid rgba(black, .1);
+    color: rgba(black, .6);
+  }
+}
 
-    &:first-child {
-      text-align: right;
-      font-weight: 400;
-      width: 40%;
-    }
 
-    &:last-child {
-      width: 100%;
-    }
+.structured-data {
+  td:first-child {
+    text-align: right;
+    font-weight: 400;
+    width: 40%;
+  }
+
+  td:last-child {
+    width: 100%;
+  }
+}
+
+
+
+.vote-list {
+
+  &--checkbox {
+    color: rgba(black, .2);
+    text-align: left;
+    width: 40px;
+  }
+
+  [checked] .vote-list--checkbox {
+    color: $green;
   }
 }

@@ -42,10 +42,39 @@
   &__title {
     font-size: 1.8rem;
     line-height: 1.5;
-    font-weight: 300;
+
+    > .highlighted-text {
+      font-weight: 300;  
+
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+        .country-header__title { font-weight: 200; }
+      }
+    }
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-    .main-header__title { font-weight: 200; }
+.country-header {
+
+  &__flag {
+    width: 120px;
+    display: block;
+    margin-left: -10px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    line-height: 1.5;
+    margin-bottom: 100px;
+
+    > .highlighted-text {
+      font-weight: 300;  
+
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+        .country-header__title { font-weight: 200; }
+      }
+    }
+  }
 }
+
+

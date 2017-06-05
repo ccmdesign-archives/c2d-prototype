@@ -62,6 +62,29 @@
   }
 
   &--orange.expand-section__panel { background-color: $orange; }
+
+  &--yellow.expand-section__handle { 
+    border-bottom-color: $yellow; 
+    color: $yellow;
+
+    .expand-section__close:hover { color: $yellow; }
+  }
+
+  &--yellow.expand-section__panel { background-color: $yellow; }
+
+  &--beige.expand-section__handle { 
+    border-bottom-color: $beige; 
+    color: darken($beige, 30);
+
+    .expand-section__close:hover { color: $beige; }
+  }
+
+  &--beige.expand-section__panel { 
+    background-color: $beige; 
+    color: rgba(black, .5);
+  }
+
+  
   
   &.js-active {
     .expand-section__panel {

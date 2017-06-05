@@ -8,4 +8,5 @@ $(document).ready(function () {
       target.addClass('js-active');
     }
   });
+
 }); // doc.ready
