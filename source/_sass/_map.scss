@@ -1,0 +1,15 @@
+.map {
+  .st0 {
+    fill: #eee;
+    stroke: #eee;
+    stroke-width: 2px;
+    transition: all .5s ease;
+    cursor: pointer;
+  }
+
+  .st0:hover {
+    fill: $orange;
+    stroke: $orange;
+    stroke-width: 2px;
+  }
+}

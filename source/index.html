@@ -6,257 +6,96 @@ title: C2D Open Data Portal - Prototype
 <main role="main"> <!-- main content starts here -->
 
 <!--  -->
-<header class="layout__container layout--header country-header main-header" style="background-image: url('/images/dino-reichmuth-90169.jpg');">
+<header class="layout__container layout--header country-header main-header">
   <div class="layout__centered">
     <div class="layout__main">
-      <img class="country-header__flag" src="/images/flags/ch.svg" alt="">
-      <h1 class="country-header__title"><span class="highlighted-text highlighted-text--orange">Switzerland</span></h1>
-      
-      <div class="layout__floating-section charts">
-        <div class="chart"></div>
-        <div class="chart"></div>
-        <div class="chart"></div>
-        <div class="chart"></div>
+      <div class="map">
+        {% include map.html %}
       </div>
     </div>
   </div>
 </header>
 
-<div class="layout__container layout--body">
-  <div class="layout__centered layout--flex">
-    <div class="layout__main">&nbsp;</div>
-    <aside class="layout__column sidebar sidebar--body">
-      <div><a href="#" target="_blank" title="File Name" class="button button--orange">API Endpoint</a></div>
-    </aside>
-  </div>
-</div>
-
 <section class="expand-section js-target">
   <div class="layout__container"> <!--expand-section--active-->
     <div class="layout__centered">
-      <ul class="tag-list tag-list--filters">
-        <li class="tag-list__title js-click">Filters</li>
-        <li class="tag-list__item">Type: Formulated Draft <i class="material-icons">close</i></li>
-        <li class="tag-list__item">Country: Switzerland <i class="material-icons">close</i></li>
-      </ul>  
+      <div class="expand-section__handle expand-section--orange js-click">Show All Countries</div>
     </div>
-  </div>
-  <div class="layout__container expand-section__panel expand-section--green"> <!--expand-section--active-->
+  </div>  
+  <div class="layout__container expand-section__panel expand-section--orange"> <!--expand-section--active-->
     <div class="layout__centered">
       <div class="expand-section__content">
         <i class="expand-section__close material-icons js-click">close</i>
-        <h2>Filters</h2>
+        <h2>Countries</h2>
         <div class="layout--flex control-panel">
           <div class="layout__column">
             <div class="control-panel__group">
-              <h3>Level</h3>
-              <input type="checkbox" id="checkbox-1"><label class="control-panel__item" for="checkbox-1">National</label>
-              <input type="checkbox" id="checkbox-2"><label class="control-panel__item" for="checkbox-2">Sub-national</label>
-            </div>
-            <div class="control-panel__group">
-              <h3>Date</h3>
-              <input class="control-panel__item" type="text" placeholder="From">
-              <input class="control-panel__item" type="text" placeholder="To">
-            </div>
-            <div class="control-panel__group">
-              <h3>Recommendation</h3>
-              <input type="checkbox" id="checkbox-3"><label class="control-panel__item control-panel--half" for="checkbox-3">Yes</label>
-              <input type="checkbox" id="checkbox-4"><label class="control-panel__item control-panel--half" for="checkbox-4">No</label>
-            </div>
-          </div>
-          <div class="layout__column">
-            <div class="control-panel__group">
-              <h3>Type</h3>
-              <div class="control-panel__item">Formulated Draft</div>
-              <input type="checkbox" id="checkbox-5"><label class="control-panel__item" for="checkbox-5">Counter Proposal</label>
-              <input type="checkbox" id="checkbox-6"><label class="control-panel__item" for="checkbox-6">Popular Initiative</label>
-              <input type="checkbox" id="checkbox-7"><label class="control-panel__item" for="checkbox-7">Popular Initiative</label>
-              <input type="checkbox" id="checkbox-8"><label class="control-panel__item" for="checkbox-8">Popular Initiative</label>
-              <input type="checkbox" id="checkbox-9"><label class="control-panel__item" for="checkbox-9">Popular Initiative</label>
+              <h3>Africa</h3>
+              <input type="checkbox" id="checkbox-10"><label class="control-panel__item" for="checkbox-10">Country Name</label>
+              <input type="checkbox" id="checkbox-11"><label class="control-panel__item" for="checkbox-11">Country Name</label>
+              <input type="checkbox" id="checkbox-12"><label class="control-panel__item" for="checkbox-12">Country Name</label>
+              <input type="checkbox" id="checkbox-13"><label class="control-panel__item" for="checkbox-13">Country Name</label>
+              <input type="checkbox" id="checkbox-14"><label class="control-panel__item" for="checkbox-14">Country Name</label>
+              <input type="checkbox" id="checkbox-15"><label class="control-panel__item" for="checkbox-15">Country Name</label>
+              <input type="checkbox" id="checkbox-16"><label class="control-panel__item" for="checkbox-16">Country Name</label>
+              <input type="checkbox" id="checkbox-17"><label class="control-panel__item" for="checkbox-17">Country Name</label>
+              <input type="checkbox" id="checkbox-18"><label class="control-panel__item" for="checkbox-18">Country Name</label>
+              <input type="checkbox" id="checkbox-19"><label class="control-panel__item" for="checkbox-19">Country Name</label>
+              <input type="checkbox" id="checkbox-20"><label class="control-panel__item" for="checkbox-20">Country Name</label>
             </div>
           </div>
           <div class="layout__column">
             <div class="control-panel__group">
-              <h3>Category</h3>
-              <input type="checkbox" id="checkbox-10"><label class="control-panel__item" for="checkbox-10">Economy</label>
-              <input type="checkbox" id="checkbox-11"><label class="control-panel__item" for="checkbox-11">Environment</label>
-              <input type="checkbox" id="checkbox-12"><label class="control-panel__item" for="checkbox-12">Economy</label>
-              <input type="checkbox" id="checkbox-13"><label class="control-panel__item" for="checkbox-13">Environment</label>
-              <input type="checkbox" id="checkbox-14"><label class="control-panel__item" for="checkbox-14">Economy</label>
-              <input type="checkbox" id="checkbox-15"><label class="control-panel__item" for="checkbox-15">Environment</label>
-              <input type="checkbox" id="checkbox-16"><label class="control-panel__item" for="checkbox-16">Economy</label>
-              <input type="checkbox" id="checkbox-17"><label class="control-panel__item" for="checkbox-17">Environment</label>
-              <input type="checkbox" id="checkbox-18"><label class="control-panel__item" for="checkbox-18">Economy</label>
-              <input type="checkbox" id="checkbox-19"><label class="control-panel__item" for="checkbox-19">Environment</label>
-              <input type="checkbox" id="checkbox-20"><label class="control-panel__item" for="checkbox-20">Economy</label>
+              <h3>Asia</h3>
+              <input type="checkbox" id="checkbox-10"><label class="control-panel__item" for="checkbox-10">Country Name</label>
+              <input type="checkbox" id="checkbox-11"><label class="control-panel__item" for="checkbox-11">Country Name</label>
+              <input type="checkbox" id="checkbox-12"><label class="control-panel__item" for="checkbox-12">Country Name</label>
+              <input type="checkbox" id="checkbox-13"><label class="control-panel__item" for="checkbox-13">Country Name</label>
+              <input type="checkbox" id="checkbox-14"><label class="control-panel__item" for="checkbox-14">Country Name</label>
+              <input type="checkbox" id="checkbox-15"><label class="control-panel__item" for="checkbox-15">Country Name</label>
+              <input type="checkbox" id="checkbox-16"><label class="control-panel__item" for="checkbox-16">Country Name</label>
+              <input type="checkbox" id="checkbox-17"><label class="control-panel__item" for="checkbox-17">Country Name</label>
+              <input type="checkbox" id="checkbox-18"><label class="control-panel__item" for="checkbox-18">Country Name</label>
+              <input type="checkbox" id="checkbox-19"><label class="control-panel__item" for="checkbox-19">Country Name</label>
+              <input type="checkbox" id="checkbox-20"><label class="control-panel__item" for="checkbox-20">Country Name</label>
             </div>
           </div>
           <div class="layout__column">
             <div class="control-panel__group">
-              <h3>Date</h3>
-              <input class="control-panel__item" type="text" placeholder="From">
-              <input class="control-panel__item" type="text" placeholder="To">
+              <h3>Europe</h3>
+              <input type="checkbox" id="checkbox-10"><label class="control-panel__item" for="checkbox-10">Country Name</label>
+              <input type="checkbox" id="checkbox-11"><label class="control-panel__item" for="checkbox-11">Country Name</label>
+              <input type="checkbox" id="checkbox-12"><label class="control-panel__item" for="checkbox-12">Country Name</label>
+              <input type="checkbox" id="checkbox-13"><label class="control-panel__item" for="checkbox-13">Country Name</label>
+              <input type="checkbox" id="checkbox-14"><label class="control-panel__item" for="checkbox-14">Country Name</label>
+              <input type="checkbox" id="checkbox-15"><label class="control-panel__item" for="checkbox-15">Country Name</label>
+              <input type="checkbox" id="checkbox-16"><label class="control-panel__item" for="checkbox-16">Country Name</label>
+              <input type="checkbox" id="checkbox-17"><label class="control-panel__item" for="checkbox-17">Country Name</label>
+              <input type="checkbox" id="checkbox-18"><label class="control-panel__item" for="checkbox-18">Country Name</label>
+              <input type="checkbox" id="checkbox-19"><label class="control-panel__item" for="checkbox-19">Country Name</label>
+              <input type="checkbox" id="checkbox-20"><label class="control-panel__item" for="checkbox-20">Country Name</label>
             </div>
           </div>
-
           <div class="layout__column">
             <div class="control-panel__group">
-              <h3>Date</h3>
-              <input class="control-panel__item" type="text" placeholder="From">
-              <input class="control-panel__item" type="text" placeholder="To">
+              <h3>North America</h3>
+              <input type="checkbox" id="checkbox-10"><label class="control-panel__item" for="checkbox-10">Country Name</label>
+              <input type="checkbox" id="checkbox-11"><label class="control-panel__item" for="checkbox-11">Country Name</label>
+              <input type="checkbox" id="checkbox-12"><label class="control-panel__item" for="checkbox-12">Country Name</label>
+              <input type="checkbox" id="checkbox-13"><label class="control-panel__item" for="checkbox-13">Country Name</label>
+              <input type="checkbox" id="checkbox-14"><label class="control-panel__item" for="checkbox-14">Country Name</label>
+              <input type="checkbox" id="checkbox-15"><label class="control-panel__item" for="checkbox-15">Country Name</label>
+              <input type="checkbox" id="checkbox-16"><label class="control-panel__item" for="checkbox-16">Country Name</label>
+              <input type="checkbox" id="checkbox-17"><label class="control-panel__item" for="checkbox-17">Country Name</label>
+              <input type="checkbox" id="checkbox-18"><label class="control-panel__item" for="checkbox-18">Country Name</label>
+              <input type="checkbox" id="checkbox-19"><label class="control-panel__item" for="checkbox-19">Country Name</label>
+              <input type="checkbox" id="checkbox-20"><label class="control-panel__item" for="checkbox-20">Country Name</label>
             </div>
           </div>
         </div>
-
-        
       </div>
     </div>
   </div>
 </section>
-
-<section class="expand-section js-target">
-  <div class="layout__container"> <!--expand-section--active-->
-    <div class="layout__centered">
-      <ul class="tag-list tag-list--columns">
-        <li class="tag-list__title js-click">Columns</li>
-        <li class="tag-list__item">Name <i class="material-icons">close</i></li>
-        <li class="tag-list__item">Date <i class="material-icons">close</i></li>
-        <li class="tag-list__item">Result <i class="material-icons">close</i></li>
-      </ul>
-    </div>
-  </div>
-  <div class="layout__container expand-section__panel expand-section--yellow"> <!--expand-section--active-->
-    <div class="layout__centered">
-      <div class="expand-section__content">
-        <i class="expand-section__close material-icons js-click">close</i>
-        <h2>Filters</h2>
-        <div class="layout--flex control-panel">
-          <div class="layout__column">
-            <div class="control-panel__group">
-              <h3>Level</h3>
-              <input type="checkbox" id="checkbox-21"><label class="control-panel__item" for="checkbox-21">National</label>
-              <input type="checkbox" id="checkbox-22"><label class="control-panel__item" for="checkbox-22">Sub-national</label>
-            </div>
-            <div class="control-panel__group">
-              <h3>Date</h3>
-              <input class="control-panel__item" type="text" placeholder="From">
-              <input class="control-panel__item" type="text" placeholder="To">
-            </div>
-            <div class="control-panel__group">
-              <h3>Recommendation</h3>
-              <input type="checkbox" id="checkbox-23"><label class="control-panel__item control-panel--half" for="checkbox-23">Yes</label>
-              <input type="checkbox" id="checkbox-24"><label class="control-panel__item control-panel--half" for="checkbox-24">No</label>
-            </div>
-          </div>
-          <div class="layout__column">
-            <div class="control-panel__group">
-              <h3>Type</h3>
-              <div class="control-panel__item">Formulated Draft</div>
-              <input type="checkbox" id="checkbox-25"><label class="control-panel__item" for="checkbox-25">Counter Proposal</label>
-              <input type="checkbox" id="checkbox-26"><label class="control-panel__item" for="checkbox-26">Popular Initiative</label>
-              <input type="checkbox" id="checkbox-27"><label class="control-panel__item" for="checkbox-27">Popular Initiative</label>
-              <input type="checkbox" id="checkbox-28"><label class="control-panel__item" for="checkbox-28">Popular Initiative</label>
-              <input type="checkbox" id="checkbox-29"><label class="control-panel__item" for="checkbox-29">Popular Initiative</label>
-            </div>
-          </div>
-          <div class="layout__column">
-            <div class="control-panel__group">
-              <h3>Category</h3>
-              <input type="checkbox" id="checkbox-30"><label class="control-panel__item" for="checkbox-30">Economy</label>
-              <input type="checkbox" id="checkbox-31"><label class="control-panel__item" for="checkbox-31">Environment</label>
-              <input type="checkbox" id="checkbox-32"><label class="control-panel__item" for="checkbox-32">Economy</label>
-              <input type="checkbox" id="checkbox-33"><label class="control-panel__item" for="checkbox-33">Environment</label>
-              <input type="checkbox" id="checkbox-34"><label class="control-panel__item" for="checkbox-34">Economy</label>
-              <input type="checkbox" id="checkbox-35"><label class="control-panel__item" for="checkbox-35">Environment</label>
-              <input type="checkbox" id="checkbox-36"><label class="control-panel__item" for="checkbox-36">Economy</label>
-              <input type="checkbox" id="checkbox-37"><label class="control-panel__item" for="checkbox-37">Environment</label>
-              <input type="checkbox" id="checkbox-38"><label class="control-panel__item" for="checkbox-38">Economy</label>
-              <input type="checkbox" id="checkbox-39"><label class="control-panel__item" for="checkbox-39">Environment</label>
-            </div>
-          </div>
-          <div class="layout__column">
-            <div class="control-panel__group">
-              <h3>Date</h3>
-              <input class="control-panel__item" type="text" placeholder="From">
-              <input class="control-panel__item" type="text" placeholder="To">
-            </div>
-          </div>
-
-          <div class="layout__column">
-            <div class="control-panel__group">
-              <h3>Date</h3>
-              <input class="control-panel__item" type="text" placeholder="From">
-              <input class="control-panel__item" type="text" placeholder="To">
-            </div>
-          </div>
-        </div>
-
-        
-      </div>
-    </div>
-  </div>
-</section>
-<div class="layout__container layout--body">
-  <div class="layout__centered layout--flex">
-    <div class="layout__main">&nbsp;</div>
-    <aside class="layout__column sidebar sidebar--body">
-      <div><a href="#" target="_blank" title="File Name" class="button button--orange">Compare</a></div>
-    </aside>
-  </div>
-</div>
-<section class="layout__container">
-  <div class="layout__centered">
-    <table class="table vote-list">
-      <tr>
-        <th class="vote-list--checkbox"><i class="material-icons">indeterminate_check_box</i></th>
-        <th class="vote-list--name">Voting Name</th>
-        <th class="vote-list--date">Date</th>
-        <th class="vote-list--result">Result</th>
-      </tr>
-
-      {% for i in (40..49) %}
-      <tr>
-        <td class="vote-list--checkbox"><div class="checkbox"><input type="checkbox" id="checkbox-{{i}}"><label for="checkbox-{{i}}"></label></div></td>
-        <td class="vote-list--name">Citizens’ initative of 17 December 2013 “AHVplus: for a strong AHV”</td>
-        <td class="vote-list--date">Sep 25, 2016</td>
-        <td class="vote-list--result">
-          <div class="mini-stacked-bar">
-            <div class="mini-stacked-bar__value mini-stacked-bar--yes" style="width: 20%"></div>
-            <div class="mini-stacked-bar__value mini-stacked-bar--no" style="width: 80%"></div>
-          </div>
-        </td>
-      </tr>
-      {% endfor %}
-    </table>
-  </div>
-</section>
-
-<section class="expand-section js-target">
-  <div class="layout__container"> <!--expand-section--active-->
-    <div class="layout__centered">
-      <div class="expand-section__handle expand-section--beige js-click">Show Historical Data</div>
-    </div>
-  </div>
-  <div class="layout__container expand-section__panel expand-section--beige"> <!--expand-section--active-->
-    <div class="layout__centered">
-      <div class="expand-section__content">
-        <i class="expand-section__close material-icons js-click">close</i>
-        <h2 class="align-center">Historical Data</h2>
-        <table class="structured-data">
-          <tr>
-            <td>Helvetian Republic 1798-1803</td>
-            <td>2 votes</td>
-          </tr>
-          <tr>
-            <td>Helvetian Republic 1708-1798</td>
-            <td>1 vote</td>
-          </tr>
-        </table>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
 </main>
 
