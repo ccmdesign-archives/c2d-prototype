@@ -28,6 +28,23 @@
     &:hover { background-color: $green; }
   }
 
+  &--yellow {
+    border-color: $yellow;
+    color: $yellow;
+
+    &:hover { background-color: $yellow; }
+  }
+
+  &--white {
+    border-color: white;
+    color: white;
+
+    &:hover { 
+      background-color: rgba(white, .8);
+      color: $orange;
+    }
+  }
+
 
 }
 
