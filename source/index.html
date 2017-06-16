@@ -6,23 +6,43 @@ title: C2D Open Data Portal - Prototype
 <main role="main"> <!-- main content starts here -->
 
 <!--  -->
-<header class="layout__container layout--header country-header main-header">
+<header class="layout__container layout--header main-header homepage-header" style="background-image: url('/images/drew-coffman-6276.jpg');">
+  <div class="layout__centered">
+    <h1 class="main-header__title"><span class="highlighted-text highlighted-text--orange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab excepturi laboriosam veritatis sapiente voluptates dolorum neque, iusto id. Ipsam facere nulla ad veritatis, commodi excepturi voluptatum, provident at tenetur culpa.</span></h1>
+
+    <a href="#" class="button button--white" style="max-width: 300px; margin: 0 auto;">Explore Dataset</a>
+  </div>
+</header>
+
+<section class="layout__container">
   <div class="layout__centered">
     <div class="layout__main">
       <div class="map">
+        <div class="map-card">
+          <img src="images/flags/ch.svg" alt="">
+          <hgroup>
+            <h3>Switzerland</h3>
+            <p>2567 National Votes</p>
+            <p>567 Sub-national Votes</p>  
+          </hgroup>
+          
+          <div>
+            <a href="/country-page.html" class="button button--yellow">View Country Page</a>
+          </div>
+        </div>
         {% include map.html %}
       </div>
     </div>
   </div>
-</header>
+</section>
 
 <section class="expand-section js-target">
   <div class="layout__container"> <!--expand-section--active-->
     <div class="layout__centered">
-      <div class="expand-section__handle expand-section--orange js-click">Show All Countries</div>
+      <div class="expand-section__handle expand-section--yellow js-click">Show Regions</div>
     </div>
   </div>  
-  <div class="layout__container expand-section__panel expand-section--orange"> <!--expand-section--active-->
+  <div class="layout__container expand-section__panel expand-section--yellow"> <!--expand-section--active-->
     <div class="layout__centered">
       <div class="expand-section__content">
         <i class="expand-section__close material-icons js-click">close</i>
@@ -31,67 +51,67 @@ title: C2D Open Data Portal - Prototype
           <div class="layout__column">
             <div class="control-panel__group">
               <h3>Africa</h3>
-              <input type="checkbox" id="checkbox-10"><label class="control-panel__item" for="checkbox-10">Country Name</label>
-              <input type="checkbox" id="checkbox-11"><label class="control-panel__item" for="checkbox-11">Country Name</label>
-              <input type="checkbox" id="checkbox-12"><label class="control-panel__item" for="checkbox-12">Country Name</label>
-              <input type="checkbox" id="checkbox-13"><label class="control-panel__item" for="checkbox-13">Country Name</label>
-              <input type="checkbox" id="checkbox-14"><label class="control-panel__item" for="checkbox-14">Country Name</label>
-              <input type="checkbox" id="checkbox-15"><label class="control-panel__item" for="checkbox-15">Country Name</label>
-              <input type="checkbox" id="checkbox-16"><label class="control-panel__item" for="checkbox-16">Country Name</label>
-              <input type="checkbox" id="checkbox-17"><label class="control-panel__item" for="checkbox-17">Country Name</label>
-              <input type="checkbox" id="checkbox-18"><label class="control-panel__item" for="checkbox-18">Country Name</label>
-              <input type="checkbox" id="checkbox-19"><label class="control-panel__item" for="checkbox-19">Country Name</label>
-              <input type="checkbox" id="checkbox-20"><label class="control-panel__item" for="checkbox-20">Country Name</label>
+              {% for i in (1..46) %}
+              <input type="checkbox" id="checkbox-{{i}}"><label class="control-panel__item" for="checkbox-{{i}}">Country Name</label>
+              {% endfor %}
             </div>
           </div>
           <div class="layout__column">
             <div class="control-panel__group">
-              <h3>Asia</h3>
-              <input type="checkbox" id="checkbox-10"><label class="control-panel__item" for="checkbox-10">Country Name</label>
-              <input type="checkbox" id="checkbox-11"><label class="control-panel__item" for="checkbox-11">Country Name</label>
-              <input type="checkbox" id="checkbox-12"><label class="control-panel__item" for="checkbox-12">Country Name</label>
-              <input type="checkbox" id="checkbox-13"><label class="control-panel__item" for="checkbox-13">Country Name</label>
-              <input type="checkbox" id="checkbox-14"><label class="control-panel__item" for="checkbox-14">Country Name</label>
-              <input type="checkbox" id="checkbox-15"><label class="control-panel__item" for="checkbox-15">Country Name</label>
-              <input type="checkbox" id="checkbox-16"><label class="control-panel__item" for="checkbox-16">Country Name</label>
-              <input type="checkbox" id="checkbox-17"><label class="control-panel__item" for="checkbox-17">Country Name</label>
-              <input type="checkbox" id="checkbox-18"><label class="control-panel__item" for="checkbox-18">Country Name</label>
-              <input type="checkbox" id="checkbox-19"><label class="control-panel__item" for="checkbox-19">Country Name</label>
-              <input type="checkbox" id="checkbox-20"><label class="control-panel__item" for="checkbox-20">Country Name</label>
+              <h3>East Asia and Pacific</h3>
+              {% for i in (47..62) %}
+              <input type="checkbox" id="checkbox-{{i}}"><label class="control-panel__item" for="checkbox-{{i}}">Country Name</label>
+              {% endfor %}
+
+              <h3>Middle East and North Africa</h3>
+              {% for i in (86..106) %}
+              <input type="checkbox" id="checkbox-{{i}}"><label class="control-panel__item" for="checkbox-{{i}}">Country Name</label>
+              {% endfor %}
             </div>
           </div>
           <div class="layout__column">
             <div class="control-panel__group">
-              <h3>Europe</h3>
-              <input type="checkbox" id="checkbox-10"><label class="control-panel__item" for="checkbox-10">Country Name</label>
-              <input type="checkbox" id="checkbox-11"><label class="control-panel__item" for="checkbox-11">Country Name</label>
-              <input type="checkbox" id="checkbox-12"><label class="control-panel__item" for="checkbox-12">Country Name</label>
-              <input type="checkbox" id="checkbox-13"><label class="control-panel__item" for="checkbox-13">Country Name</label>
-              <input type="checkbox" id="checkbox-14"><label class="control-panel__item" for="checkbox-14">Country Name</label>
-              <input type="checkbox" id="checkbox-15"><label class="control-panel__item" for="checkbox-15">Country Name</label>
-              <input type="checkbox" id="checkbox-16"><label class="control-panel__item" for="checkbox-16">Country Name</label>
-              <input type="checkbox" id="checkbox-17"><label class="control-panel__item" for="checkbox-17">Country Name</label>
-              <input type="checkbox" id="checkbox-18"><label class="control-panel__item" for="checkbox-18">Country Name</label>
-              <input type="checkbox" id="checkbox-19"><label class="control-panel__item" for="checkbox-19">Country Name</label>
-              <input type="checkbox" id="checkbox-20"><label class="control-panel__item" for="checkbox-20">Country Name</label>
+              <h3>Europe and Central Asia</h3>
+              {% for i in (63..85) %}
+              <input type="checkbox" id="checkbox-{{i}}"><label class="control-panel__item" for="checkbox-{{i}}">Country Name</label>
+              {% endfor %}
+
+              <h3>South Asia</h3>
+              {% for i in (107..116) %}
+              <input type="checkbox" id="checkbox-{{i}}"><label class="control-panel__item" for="checkbox-{{i}}">Country Name</label>
+              {% endfor %}
             </div>
           </div>
+
           <div class="layout__column">
             <div class="control-panel__group">
               <h3>North America</h3>
-              <input type="checkbox" id="checkbox-10"><label class="control-panel__item" for="checkbox-10">Country Name</label>
-              <input type="checkbox" id="checkbox-11"><label class="control-panel__item" for="checkbox-11">Country Name</label>
-              <input type="checkbox" id="checkbox-12"><label class="control-panel__item" for="checkbox-12">Country Name</label>
-              <input type="checkbox" id="checkbox-13"><label class="control-panel__item" for="checkbox-13">Country Name</label>
-              <input type="checkbox" id="checkbox-14"><label class="control-panel__item" for="checkbox-14">Country Name</label>
-              <input type="checkbox" id="checkbox-15"><label class="control-panel__item" for="checkbox-15">Country Name</label>
-              <input type="checkbox" id="checkbox-16"><label class="control-panel__item" for="checkbox-16">Country Name</label>
-              <input type="checkbox" id="checkbox-17"><label class="control-panel__item" for="checkbox-17">Country Name</label>
-              <input type="checkbox" id="checkbox-18"><label class="control-panel__item" for="checkbox-18">Country Name</label>
-              <input type="checkbox" id="checkbox-19"><label class="control-panel__item" for="checkbox-19">Country Name</label>
-              <input type="checkbox" id="checkbox-20"><label class="control-panel__item" for="checkbox-20">Country Name</label>
+              {% for i in (117..118) %}
+              <input type="checkbox" id="checkbox-{{i}}"><label class="control-panel__item" for="checkbox-{{i}}">Country Name</label>
+              {% endfor %}
+
+              <h3>Latin America <br>and the Caribbean</h3>
+              {% for i in (119..148) %}
+              <input type="checkbox" id="checkbox-{{i}}"><label class="control-panel__item" for="checkbox-{{i}}">Country Name</label>
+              {% endfor %}
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="layout__container about-section">
+  <div class="layout__centered">
+    <div class="layout__main">
+      <h2>About this Project</h2>
+      <div class="layout--flex">
+        <div class="layout__column">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quos praesentium voluptas doloremque aliquid et expedita, dolorem deserunt corporis culpa magni magnam doloribus quo voluptate dolorum delectus quaerat numquam iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quos praesentium voluptas doloremque aliquid et expedita, dolorem deserunt corporis culpa magni magnam doloribus quo voluptate dolorum delectus quaerat numquam iure?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quos praesentium voluptas doloremque aliquid et expedita, dolorem deserunt corporis culpa magni magnam doloribus quo voluptate dolorum delectus quaerat numquam iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quos praesentium voluptas doloremque aliquid et expedita, dolorem deserunt corporis culpa magni magnam doloribus quo voluptate dolorum delectus quaerat numquam iure?</p>
+        </div>
+        <div class="layout__column">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quos praesentium voluptas doloremque aliquid et expedita, dolorem deserunt corporis culpa magni magnam doloribus quo voluptate dolorum delectus quaerat numquam iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quos praesentium voluptas doloremque aliquid et expedita, dolorem deserunt corporis culpa magni magnam doloribus quo voluptate dolorum delectus quaerat numquam iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quos praesentium voluptas doloremque aliquid et expedita, dolorem deserunt corporis culpa magni magnam doloribus quo voluptate dolorum delectus quaerat numquam iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quos praesentium voluptas doloremque aliquid et expedita, dolorem deserunt corporis culpa magni magnam doloribus quo voluptate dolorum delectus quaerat numquam iure?</p>
         </div>
       </div>
     </div>

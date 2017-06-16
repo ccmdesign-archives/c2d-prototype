@@ -1,0 +1,13 @@
+.about-section {
+  padding: 60px 0;
+  background-color: $green;
+  h2, p { color: white; }
+
+  .layout__column:first-of-type {
+    padding-right: 50px;
+  }
+}
+
+.section--green {
+  background-color: $green;
+}

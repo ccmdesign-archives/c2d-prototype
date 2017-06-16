@@ -1,4 +1,7 @@
 .map {
+  padding-top: 60px;
+  position: relative;
+
   .st0 {
     fill: #eee;
     stroke: #eee;
@@ -8,8 +11,37 @@
   }
 
   .st0:hover {
-    fill: $orange;
-    stroke: $orange;
+    fill: $yellow;
+    stroke: $yellow;
     stroke-width: 2px;
   }
 }
+
+.map-card {
+  width: 420px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(white, .5);
+  padding: 30px;
+  border: 1px solid rgba($orange, .3);
+
+  img { 
+    max-width: 150px; 
+    box-shadow: 1px 1px 4px rgba(black, .2);
+    float: left;
+  }
+
+  hgroup {
+    margin-left: 170px;
+  }
+
+  > div { margin-top: 30px; }
+
+  h3, p {
+    margin: 5px 0;
+  }
+}
+
+
+
