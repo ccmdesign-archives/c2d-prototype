@@ -1,5 +1,4 @@
 .mini-stacked-bar {
-  overflow: hidden;
   min-width: 100px;
 
 
@@ -15,4 +14,102 @@
   &--no {
     background-color: $no-color;
   }
+
+  &--valid { background-color: $green; }
+  &--abroad { background-color: rgba($green, .6); }
+  &--informal { background-color: rgba($green, .3); }
+  &--invalid { background-color: rgba($no-color, 1); }
+  &--empty { background-color: rgba($no-color, .2); }
+
+}
+
+.chart-legend {
+  // Base
+  position: absolute;
+  width: 186px;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 0 12px rgba(black, .1);
+  top: -55px;
+  left: -180px;
+  
+  // Default State
+  opacity: 0;
+  pointer-events: none;
+
+  // Trasnition
+  transition: all .3s ease-in;
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 8px solid $main-color;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    right: -8px;
+    top: 53px;
+  }
+
+  &__anchor { position: relative; }
+
+  &__type { 
+    color: rgba(black, .6); 
+    font-weight: 400;
+    border: 0;
+    font-size: .8rem;
+
+    td { 
+      padding: 2px 8px 2px 0;
+      border: 0;
+    }
+
+    td:first-child {
+      text-align: right;
+      border-left: 4px solid rgba(black, .2);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    td:last-child {
+      border-right: 4px solid $orange;
+    }
+  }
+
+  &--informal { color: $green; }
+  &--empty { color: $no-color; }
+
+  &--valid { 
+    color: $green;
+    background-color: rgba($green, .1);
+    td { border-left-color: $green  !important; }
+  }
+  &--abroad { 
+    color: $green;
+    background-color: rgba($green, .05);
+    td { border-left-color: rgba($green, .6) !important; }
+  }
+  &--informal { 
+    color: $green;
+    background-color: rgba($green, .1);
+    td { border-left-color: rgba($green, .3) !important; }
+  }
+  &--invalid { 
+    color: $no-color;
+    background-color: rgba($no-color, .1);
+    td { border-left-color: $no-color  !important; }
+  }
+  &--empty { 
+    color: $no-color;
+    background-color: rgba($no-color, .05);
+    > td { border-left-color: rgba($no-color, .2) !important; }
+  }
+}
+
+
+.chart-legend__anchor:hover .chart-legend { 
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-20px, 0);
 }
