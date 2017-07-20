@@ -29,8 +29,6 @@ table {
   }
 }
 
-
-
 .vote-list {
 
   &--checkbox {
@@ -43,3 +41,32 @@ table {
     color: $green;
   }
 }
+
+.load-more-button {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 5px 0;
+  text-align: center;
+  color: $green;
+  font-size: .7rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 2px solid rgba($green, .2);
+  position: relative;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: $green;
+  }
+}
+
+.load-more-button:hover:before {
+  width: 100%;
+  transition: width 4s linear;
+}
+
