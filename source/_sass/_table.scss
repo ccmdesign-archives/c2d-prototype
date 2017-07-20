@@ -41,6 +41,23 @@ table {
     color: $green;
   }
 
+  &__empty-warning {
+    text-align: center;
+    font-weight: 200;
+    border-top: 1px solid rgba(black, .05);
+    
+    td {
+      color: rgba($orange, .5);
+      font-size: 2rem;
+      padding: 50px 0;  
+    }
+    
+    &:hover {
+      background-color: transparent !important;
+    }
+
+  }
+
   tr:hover { background-color: rgba(black, .03); }
 }
 
