@@ -30,3 +30,7 @@ $yes-color: #0AB59E;
 }
 .clearfix:after {clear: both;}
 .clearfix {zoom: 1;} /* IE < 8 */
+
+body {
+  min-height: 100vh;
+}
