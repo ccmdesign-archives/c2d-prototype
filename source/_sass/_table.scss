@@ -40,6 +40,8 @@ table {
   [checked] .vote-list--checkbox {
     color: $green;
   }
+
+  tr:hover { background-color: rgba(black, .03); }
 }
 
 .load-more-button {
