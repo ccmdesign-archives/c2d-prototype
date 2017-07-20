@@ -11,3 +11,37 @@
 .section--green {
   background-color: $green;
 }
+
+
+.page-404 {
+  background-color: rgba(black, .03);
+
+  h1, h2, h4 {
+    // text-align: center;
+  }
+
+  h4 {
+    margin: 15vh 0 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(black, .3);
+  }
+
+  h1 { 
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.1;
+    color: rgba(black, .2);
+    margin: 0 0 15vh 0;
+  }
+
+  h2 {
+    
+  }
+
+  
+
+
+}

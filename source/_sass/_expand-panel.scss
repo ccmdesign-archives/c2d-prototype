@@ -99,6 +99,18 @@
     color: rgba(black, .5);
   }
 
+  &--gray.expand-section__handle { 
+    border-bottom-color: rgba(black, .1); 
+    color: rgba(black, .3);
+
+    .expand-section__close:hover { color: rgba(black, .3); }
+  }
+
+  &--gray.expand-section__panel { 
+    background-color: rgba(black, .3); 
+    color: rgba(black, .4);
+  }
+
   &--white.expand-section__handle { 
     border-bottom-color: white; 
     color: white;
