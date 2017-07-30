@@ -1,0 +1,57 @@
+.main-section-loading {
+  margin-top: 28vh;
+  cursor: pointer;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  border-bottom: 2px solid rgba($green, .2);
+  position: relative;
+  width: 100%;
+
+  span { 
+    color: $green; 
+    animation-name: pulse;
+    animation-duration: 1.5s; 
+    animation-timing-function: linear; 
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running; 
+
+  }
+
+  &:before {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: $green;
+  }
+}
+
+.main-section-loading:hover {
+  &:before {
+    width: 100%;
+    transition: width 4s linear;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
